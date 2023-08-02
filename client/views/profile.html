@@ -16,7 +16,7 @@
     <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
     <script src="/js/profile.js" type="module"></script>
-    <title>Enter Euid - Profile</title>
+    <title>✨Enter Euid - 마이 이듬</title>
   </head>
 
   <body class="m-auto">
@@ -31,18 +31,17 @@
         </div>
       </div>
     </header>
-
     <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
-      <ul class="flex justify-between items-center w-full">
+      <ul class="flex justify-around items-center w-full">
         <li>
           <a href="/views/story.html" class="flex flex-col items-center py-1">
-            <img src="../assets/icon-home.svg" alt="홈으로 이동" />
+            <img src="/assets/icon-home.svg" alt="홈으로 이동" class="w-5 h-5" />
             <span class="text-xs inline-block w-16 text-center">홈</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex flex-col items-center px-"
-            ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span
+            ><img src="/assets/icon-life.svg" alt="게시판으로 이동" class="w-5 h-5" /><span
               class="text-xs inline-block w-16 text-center"
               >게시판</span
             ></a
@@ -50,22 +49,23 @@
         </li>
         <li>
           <a href="/views/device.html" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+            ><img src="/assets/icon-map.svg" alt="내근처로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
               >내 근처</span
             ></a
           >
         </li>
         <li>
-          <a href="#" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span
+          <a href="/views/chat.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-chat.svg" alt="채팅으로 이동" class="w-5 h-5" /><span
               class="text-xs inline-block w-16 text-center"
               >채팅</span
             ></a
           >
         </li>
         <li>
-          <a href="#" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span
+          <a href="/views/profile.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-full-my.svg" alt="마이이듬으로 이동" class="w-5 h-5" /><span
               class="text-xs inline-block w-16 text-center"
               >마이 이듬</span
             ></a
@@ -105,24 +105,24 @@
         </div>
         <div class="w-auto h-14 flex justify-evenly">
           <div class="flex flex-col justify-center">
-            <img src="/assets/icon-chat.svg" alt="Q&A" / class="w-7 h-7 ml-ml6">
+            <img src="/assets/icon-chat.svg" alt="Q&A" class="w-7 h-7 ml-ml6" />
             <h2 class="text-mySize10">나의 Q&A</h2>
           </div>
           <div class="flex flex-col justify-center myProfile hover:cursor-pointer" tabindex="1">
-            <img src="/assets/icon-my.svg" alt="나의 프로필" / class="w-7 h-7 ml-2">
+            <img src="/assets/icon-my.svg" alt="나의 프로필" class="w-7 h-7 ml-2" />
             <h2 class="text-mySize10">나의 프로필</h2>
           </div>
           <div class="flex flex-col justify-center">
-            <img src="/assets/icon-alram-bell.svg" alt="내소식" / class="w-7 h-7 mr-0.5">
+            <img src="/assets/icon-alram-bell.svg" alt="내소식" class="w-7 h-7 mr-0.5" />
             <h2 class="text-mySize10">내소식</h2>
           </div>
         </div>
       </div>
       <h2 class="sr-only">활동</h2>
       <div class="w-auto h-20 p-3">
-        <div class="w-passionTem h-4 flex flex-nowrap ">
+        <div class="w-passionTem h-4 flex flex-nowrap">
           <h3 class="w-passionTemWord h-4 text-sm">열정온도</h3>
-            <img src="/assets/icon-information.svg" alt="세부정보" / class="w-4 h-4">
+          <img src="/assets/icon-information.svg" alt="세부정보" class="w-4 h-4" />
         </div>
         <div>
           <div class="pl-profileDotLeft flex flex-row flex-nowrap justify-between">
@@ -136,8 +136,8 @@
             </div>
           </div>
           <div class="relative">
-            <div class="w-11/12 h-2 mx-auto mt-1.5 rounded-md bg-gray-500 absolute"></div>
-            <div class="w-5/12 h-2 mt-1.5 ml-auto rounded-md bg-primary absolute"></div>
+            <div class="w-full h-2 mx-auto mt-1.5 rounded-md bg-gray-500 absolute"></div>
+            <div class="w-[48%] h-2 mx-auto mt-1.5 rounded-md bg-primary absolute"></div>
           </div>
         </div>
       </div>
@@ -164,47 +164,57 @@
       </div>
       <div>
         <div class="w-auto h-14 pr-5 pl-4 py-4 flex justify-between items-center">
-          <h3 class="sr-only">활동배지</h3> 
-            <p class="text-sm font-semibold">활동배지 10개</p>
-            <img src="./../assets/icon-direction-right.svg" alt="활동배지 보기" / class="w-4 h-4">
+          <h3 class="sr-only">활동배지</h3>
+          <p class="text-sm font-semibold">활동배지 10개</p>
+          <img src="./../assets/icon-direction-right.svg" alt="활동배지 보기" class="w-4 h-4" />
         </div>
-        <div class="w-auto h-14 pr-5 pl-4 py-4 border-solid border-y-contentsSecondary border-y flex justify-between items-center">
-          <h3 class="sr-only">판매상품</h3>   
+        <div
+          class="w-auto h-14 pr-5 pl-4 py-4 border-solid border-y-contentsSecondary border-y flex justify-between items-center"
+        >
+          <h3 class="sr-only">판매상품</h3>
           <p class="text-sm font-semibold">판매상품 3개</p>
-            <img src="./../assets/icon-direction-right.svg" alt="판매상품 보기" / class="w-4 h-4">
+          <img src="./../assets/icon-direction-right.svg" alt="판매상품 보기" class="w-4 h-4" />
         </div>
         <div class="w-auto h-14 pr-5 pl-4 py-4 flex justify-between items-center">
-          <h3 class="sr-only">받은 매너 평가</h3>   
+          <h3 class="sr-only">받은 매너 평가</h3>
           <p class="text-sm font-semibold">받은 매너 평가</p>
-            <img src="./../assets/icon-direction-right.svg" alt="받은 매너 평가 보기" / class="w-4 h-4">
+          <img src="./../assets/icon-direction-right.svg" alt="받은 매너 평가 보기" class="w-4 h-4" />
         </div>
       </div>
       <div class="w-auto h-40 pt-2.5 pb-3 pl-2.5 pr-14">
         <div class="flex flex-nowrap mb-4">
-            <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
-                <p class="text-sm font-semibold pl-1.5">10</p>
-            </div>
-            <p class="bg-tertiary w-36 px-2 py-2 ml-3 text-sm font-normal rounded-r-lg rounded-bl-lg" >시간 약속을 잘 지켜요</p>
+          <div class="flex">
+            <img src="./../assets/icon-people.svg" alt="매너 평가자" class="h-4 w-4" />
+            <p class="text-sm font-semibold pl-1.5">10</p>
+          </div>
+          <p class="bg-tertiary w-36 px-2 py-2 ml-3 text-sm font-normal rounded-r-lg rounded-bl-lg">
+            시간 약속을 잘 지켜요
+          </p>
         </div>
         <div class="flex flex-nowrap mb-4">
-            <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
-                <p class="text-sm font-semibold pl-1.5">9</p>
-            </div>
-            <p class="bg-tertiary w-40 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg" >친절하고 매너가 좋아요</p>
+          <div class="flex">
+            <img src="/assets/icon-people.svg" alt="매너 평가자" class="h-4 w-4" />
+            <p class="text-sm font-semibold pl-1.5">9</p>
+          </div>
+          <p class="bg-tertiary w-40 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg">
+            친절하고 매너가 좋아요
+          </p>
         </div>
         <div class="flex flex-nowrap">
-            <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
-                <p class="text-sm font-semibold pl-1.5">8</p>
-            </div>
-            <p class="bg-tertiary w-52 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg" >제가 있는 곳까지 와서 거래했어요</p>
+          <div class="flex">
+            <img src="/assets/icon-people.svg" alt="매너 평가자" class="h-4 w-4" />
+            <p class="text-sm font-semibold pl-1.5">8</p>
+          </div>
+          <p class="bg-tertiary w-52 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg">
+            제가 있는 곳까지 와서 거래했어요
+          </p>
         </div>
       </div>
       <div class="w-auto h-14 py-4align-bottom">
-        <div class="w-auto h-14 pr-5 pl-3 py-3 border-solid border-y-contentsSecondary border-y flex justify-between items-center">
-          <h3 class="sr-only">받은 거래 후기</h3>   
+        <div
+          class="w-auto h-14 pr-5 pl-3 py-3 border-solid border-y-contentsSecondary border-y flex justify-between items-center"
+        >
+          <h3 class="sr-only">받은 거래 후기</h3>
           <p class="text-sm font-semibold">받은 거래 후기 1</p>
             <img src="/assets/icon-direction-right.svg" alt="우측 화살표" / class="w-4 h-4">
         </div>
@@ -221,7 +231,7 @@
           </div>
         </div>
         <div>
-            <img src="./../assets/icon-more.svg" alt="더보기" />
+          <img src="/assets/icon-more.svg" alt="더보기" />
         </div>
       </div>
       <div class="w-auto h-80 pt-4 pb-20 pl-5 pr-3">

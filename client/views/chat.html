@@ -12,13 +12,13 @@
     <meta name="description" content="상품거래 채팅 화면입니다" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
-    <link rel="icon" href="/assets/euid-pavicon.png" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
     <script src="/js/chat.js" type="module"></script>
-    <title>✨Enter Euid - Chatting</title>
+    <title>✨바른 교육 - Enter Euid</title>
   </head>
 
   <body class="mx-auto">
@@ -32,7 +32,48 @@
         </div>
       </div>
     </header>
-
+    <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
+      <ul class="flex justify-around items-center w-full">
+        <li>
+          <a href="/views/story.html" class="flex flex-col items-center py-1">
+            <img src="/assets/icon-home.svg" alt="홈으로 이동" class="w-5 h-5" />
+            <span class="text-xs inline-block w-16 text-center">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex flex-col items-center px-"
+            ><img src="/assets/icon-life.svg" alt="게시판으로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
+              >게시판</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="/views/device.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-map.svg" alt="내근처로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
+              >내 근처</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="/views/chat.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-full-chat.svg" alt="채팅으로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
+              >채팅</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="/views/profile.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-my.svg" alt="마이이듬으로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
+              >마이 이듬</span
+            ></a
+          >
+        </li>
+      </ul>
+    </nav>
     <h1 class="sr-only">주연테크 4K UHD 모니터 채팅</h1>
     <div class="contents">
       <div class="relative w-full max-w-3xl mx-auto">
