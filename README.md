@@ -1,6 +1,7 @@
 # [🦁&nbsp;멋쟁이 사자처럼 FE 6기 Javascript 프로젝트] Enter EUID
 
 <img width="320" alt="스크린샷 2023-08-02 12 57 21" src="https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/140426866/cc17ecd6-577b-4d8a-a25f-7348e1cb29dd">
+
 <br />
 
 ## 🌈&nbsp;<span style="color: red">멋</span><span style="color: orange">쟁</span><span style="color: gold">이</span><span style="color: green">사</span><span style="color: blue">자</span><span style="color: navy">처</span><span style="color: purple">럼</span> JavaScript 프로젝트 16조&nbsp;⛅️
@@ -8,7 +9,8 @@
 > 프로젝트 기간 : 2023년 7월 28일 ~ 2023년 8월 2일 <br />
 
 > 발표 자료: https://docs.google.com/presentation/d/1dQDNeH2JcraF7RMDGaqDud1QcAXQLUoRCKW1fAQ2DO8/edit?usp=sharing
-> <br />
+
+<br />
 
 ### 👫 TEAM 소개
 
@@ -34,6 +36,7 @@
 <p herf="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,tailwind,js,git,github,figma"/>
 </p>
+
 <br />
 
 ### ⭐️ 가이드라인 준수 사항
@@ -66,7 +69,8 @@
 #### 6. 검색창 기능 구현했습니다.
 
 - 검색 기능을 구현해 거래 항목의 text와 일치하는 항목들을 리랜더링
-  <br />
+
+<br />
 
 ### ⚠️ 이슈
 
@@ -121,7 +125,8 @@
 > 해결방안
 
 - 이벤트 위임을 활용하여 상위 요소에 클릭 이벤트를 주는 방법을 활용하여 해결
-  <br />
+
+<br />
 
 ### 📷 페이지별 안내
 
@@ -136,6 +141,7 @@
 #### 3. 기기 거래
 
 ![bandicam 2023-08-02 12-17-03-625](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/b61e8dcd-1116-4840-8e2e-67a30ba3e016)
+
 <br />
 
 ### 🏅 기능별 안내
@@ -241,6 +247,7 @@
 ![image](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/92416215-7578-4eb3-a7a3-da311c7abd7e)
 
 ![image](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/6da62c20-ca8f-4d99-9b86-4ffb670db9f0)
+
 <br />
 
 ### 💊 성능 검사
@@ -284,6 +291,7 @@
 #### 10. 프로필 수정 (profileCard.html)
 
 ![프로필 수정](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
+
 <br />
 
 ### ✏️ 프로젝트 소감
@@ -310,6 +318,7 @@ js 프로젝트를 진행하면서 fetch로 json 데이터를 불러오려는 �
 
 동적 렌더링을 진행하며 브라우저 렌더링의 순서 및 과정에 영향을 받아 페이지 틀이 무너지거나 동적인 기능이 구현하지 않는 등의 문제를 겪었습니다. 이를 통해 문제 상황을 해결하는 능력을 기를 수 있었으며, 동료들과 함께 고민하는 과정을 통해 협업에 대한 중요성을 다시 한 번 깨달을 수 있었습니다. 또한, 자바스크립트 기능 작동 원리에 대해 더욱 알 수 있는 시간이었습니다.
 다양한 기능을 고민하고 구현하는 과정을 통해 자바스크립트에 대한 이해를 높일 수 있었으며 기능 구현에 대한 흥미를 한 층 더 높일 수 있는 계기가 되었습니다.
+
 <br />
 
 ### 🦾 프로젝트 사용법
