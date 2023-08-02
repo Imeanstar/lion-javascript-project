@@ -123,10 +123,10 @@
         <div class="swiper-button-next" style="color: white" aria-label="슬라이드 다음으로 넘기기"></div>
         <div class="swiper-button-prev" style="color: white" aria-label="슬라이드 이전으로 넘기기"></div>
 
-        <button class="absolute top-[28rem] left-1/2 z-50">
+        <button class="absolute bottom-6 right-4 z-50">
           <img class="play hidden" alt="슬라이드 시작" src="/assets/playBtn.svg" />
         </button>
-        <button class="absolute top-[28rem] left-1/2 z-50">
+        <button class="absolute bottom-6 right-6 z-50">
           <img class="stop" alt="슬라이드 멈춤" src="/assets/pauseBtn.svg" />
         </button>
       </div>
@@ -181,14 +181,16 @@
         </li>
       </ul>
     </nav>
+    <h1 class="sr-only">선배님 스토리</h1>
     <div class="flex flex-col max-w-3xl items-center pt-4">
       <main class="storyList flex py-3 px-4 flex-col justify-between gap-7 w-[95%]">
         <h2 class="absolute w-1 h-1 p-0 m-n1 overflow-hidden clip-rect-0 whitespace-nowrap border-0">
           선배님 스토리 목록
         </h2>
-        <ul class="flex flex-col gap-6">
+        <ul class="flex flex-col gap-[3.75rem]">
           <li>
             <div class="flex items-start justify-between gap-[4%]">
+              <h2 class="sr-only">프론트엔드 수강생 후기 1</h2>
               <a href="#">
                 <div class="post flex flex-col gap-1" data-index="1">
                   <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
@@ -200,6 +202,7 @@
                   </div>
                 </div>
               </a>
+              <h2 class="sr-only">프론트엔드 수강생 후기 2</h2>
               <a href="#">
                 <div class="post flex flex-col gap-1" data-index="2">
                   <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
@@ -215,6 +218,7 @@
           </li>
           <li>
             <div class="flex items-start justify-between gap-[4%]">
+              <h2 class="sr-only">프론트엔드 수강생 후기 3</h2>
               <a href="#">
                 <div class="post flex flex-col gap-1" data-index="3">
                   <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
@@ -226,6 +230,7 @@
                   </div>
                 </div>
               </a>
+              <h2 class="sr-only">프론트엔드 수강생 후기 4</h2>
               <a href="#">
                 <div class="flex flex-col items-center gap-3">
                   <div class="post flex flex-col gap-1" data-index="4">
@@ -243,6 +248,7 @@
           </li>
           <li>
             <div class="flex items-start justify-between gap-[4%]">
+              <h2 class="sr-only">프론트엔드 수강생 후기 5</h2>
               <a href="#">
                 <div class="post flex flex-col gap-1" data-index="5">
                   <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
@@ -254,22 +260,22 @@
                   </div>
                 </div>
               </a>
+              <h2 class="sr-only">프론트엔드 수강생 후기 6</h2>
               <a href="#">
                 <div class="post flex flex-col gap-1" data-index="6">
-                  <div class="flex flex-col items-center aspect-4/3 gap-3">
-                    <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
-                    <p class="postTitle text- flex-item self-stretch text-sm font-normal leading-base"></p>
-                    <div class="w-240 gap-3 leading-base">
-                      <span class="postSchool text-gray-500 text-xs font-normal"></span>
-                      <span class="text-gray-500 text-xs font-normal" aria-hidden="true">|</span>
-                      <span class="postWriter text-gray-500 text-xs font-normal"></span>
-                    </div>
+                  <img class="postImage aspect-4/3 rounded-md mb-2" alt="사진" src="#" />
+                  <p class="postTitle flex-item self-stretch text-sm font-normal leading-base"></p>
+                  <div class="w-240 gap-3 leading-base">
+                    <span class="postSchool text-gray-500 text-xs font-normal"></span>
+                    <span class="text-gray-500 text-xs font-normal" aria-hidden="true">|</span>
+                    <span class="postWriter text-gray-500 text-xs font-normal"></span>
                   </div>
                 </div>
               </a>
             </div>
           </li>
         </ul>
+        <div class="h-20"></div>
       </main>
     </div>
   </body>
