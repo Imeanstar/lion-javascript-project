@@ -2,9 +2,15 @@
 
 <img width="320" alt="스크린샷 2023-08-02 12 57 21" src="https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/140426866/cc17ecd6-577b-4d8a-a25f-7348e1cb29dd">
 
+<br />
+
 ## 🌈&nbsp;<span style="color: red">멋</span><span style="color: orange">쟁</span><span style="color: gold">이</span><span style="color: green">사</span><span style="color: blue">자</span><span style="color: navy">처</span><span style="color: purple">럼</span> JavaScript 프로젝트 16조&nbsp;⛅️
 
-> 프로젝트 기간 : 2023년 7월 28일 ~ 2023년 8월 2일
+> 프로젝트 기간 : 2023년 7월 28일 ~ 2023년 8월 2일 <br />
+
+> 발표 자료: https://docs.google.com/presentation/d/1dQDNeH2JcraF7RMDGaqDud1QcAXQLUoRCKW1fAQ2DO8/edit?usp=sharing
+
+<br />
 
 ### 👫 TEAM 소개
 
@@ -30,7 +36,8 @@
 <p herf="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,tailwind,js,git,github,figma"/>
 </p>
-<br>
+
+<br />
 
 ### ⭐️ 가이드라인 준수 사항
 
@@ -63,49 +70,63 @@
 
 - 검색 기능을 구현해 거래 항목의 text와 일치하는 항목들을 리랜더링
 
+<br />
+
 ### ⚠️ 이슈
 
 #### 1. stash사용 중 파일 삭제
 
 > 문제상황
-  - 커밋할 내용을 Stash에 저장해 두었으나, 실수로 파일을 날리고, 마지막 commit은 하루전 내용이었던 상황. Stash에 두 가지 옵션이 있는데 꺼내면서 삭제하는 pop 옵션으로 진행하여 Stash에도 없고, reload를 해서 "ctrl + z"도 시행되지 않는 상황 발생.
+
+- 커밋할 내용을 Stash에 저장해 두었으나, 실수로 파일을 날리고, 마지막 commit은 하루전 내용이었던 상황. Stash에 두 가지 옵션이 있는데 꺼내면서 삭제하는 pop 옵션으로 진행하여 Stash에도 없고, reload를 해서 "ctrl + z"도 시행되지 않는 상황 발생.
 
 > 해결방안
-  - https://www.baeldung.com/git-recover-dropped-stash
-해당 사이트 내용 참고하여 복구 완료
+
+- https://www.baeldung.com/git-recover-dropped-stash
+  해당 사이트 내용 참고하여 복구 완료
 
 #### 2. 엔터 입력시 원하지 않는 곳을 선택
 
 > 문제상황
-  - 회원가입,로그인 인증페이지에서 인증문자 입력 후 엔터를 입력했을 때, 동의하고 시작하기 가 눌러지는것이 바람직하나 인증문자 다시 받기가 눌러지는 이슈 발생
+
+- 회원가입,로그인 인증페이지에서 인증문자 입력 후 엔터를 입력했을 때, 동의하고 시작하기 가 눌러지는것이 바람직하나 인증문자 다시 받기가 눌러지는 이슈 발생
 
 > 해결방안
-  - alert창으로 안내해주고 focus를 동의하고 시작하기 로 이동시키는 방식으로 해결
+
+- alert창으로 안내해주고 focus를 동의하고 시작하기 로 이동시키는 방식으로 해결
 
 #### 3. 렌더링 시 data가 undefined로 처리되는 이슈
 
 > 문제상황
-  - 페이지 로드 시 data.json에 저장된 정보를 화면에 렌더링해야 하나 데이터를 가져오지 못하는 이슈 발생
+
+- 페이지 로드 시 data.json에 저장된 정보를 화면에 렌더링해야 하나 데이터를 가져오지 못하는 이슈 발생
 
 > 해결방안
-  - 구조 분해 할당으로 요소를 한 번 더 분해 후 적용하는 방식으로 해결
+
+- 구조 분해 할당으로 요소를 한 번 더 분해 후 적용하는 방식으로 해결
 
 #### 4. 카테고리 검색 시 한글로 검색되지 않는 이슈
 
 > 문제상황
-  - 한글 입력과 영어 입력의 매커니즘 차이에서 오는 문제
-  - APPLE은 A->AP->APP->APPL->APPLE의 방식으로 입력되지만 프론 은 ㅍ->프->플->프로->프론의 방식으로 입력되어 중간에 원치않는 값도 인식될 수 있음
+
+- 한글 입력과 영어 입력의 매커니즘 차이에서 오는 문제
+- APPLE은 A->AP->APP->APPL->APPLE의 방식으로 입력되지만 프론 은 ㅍ->프->플->프로->프론의 방식으로 입력되어 중간에 원치않는 값도 인식될 수 있음
 
 > 해결방안
-  - 추가로 해당 완성값이 include true일 경우 hidden속성을 제거해주는 방식을 채택하여 이슈 해결
+
+- 추가로 해당 완성값이 include true일 경우 hidden속성을 제거해주는 방식을 채택하여 이슈 해결
 
 #### 5. 좋아요 버튼 클릭 시 동작하지 않는 이슈
 
 > 문제상황
-  - 좋아요 버튼 클릭 시 html 파일에 마크업된 내용은 클릭 이벤트가 정상 작동하나, 동적 렌더링이 된 내용은 클릭 이벤트가 적용되지 않는 이슈 발생
+
+- 좋아요 버튼 클릭 시 html 파일에 마크업된 내용은 클릭 이벤트가 정상 작동하나, 동적 렌더링이 된 내용은 클릭 이벤트가 적용되지 않는 이슈 발생
 
 > 해결방안
-  - 이벤트 위임을 활용하여 상위 요소에 클릭 이벤트를 주는 방법을 활용하여 해결
+
+- 이벤트 위임을 활용하여 상위 요소에 클릭 이벤트를 주는 방법을 활용하여 해결
+
+<br />
 
 ### 📷 페이지별 안내
 
@@ -120,6 +141,8 @@
 #### 3. 기기 거래
 
 ![bandicam 2023-08-02 12-17-03-625](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/b61e8dcd-1116-4840-8e2e-67a30ba3e016)
+
+<br />
 
 ### 🏅 기능별 안내
 
@@ -224,49 +247,52 @@
 ![image](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/92416215-7578-4eb3-a7a3-da311c7abd7e)
 
 ![image](https://github.com/lion-js-project16-euid/lion-js-project16-euid/assets/81348938/6da62c20-ca8f-4d99-9b86-4ffb670db9f0)
-<br>
+
+<br />
 
 ### 💊 성능 검사
 
 #### 1. 시작 페이지 (index.html)
 
-![](https://lh6.googleusercontent.com/FzQF1Qt3RdpfnAonjFB_I__Yf7DXT5CaEqV4GAZkMYexliLUUcMH4r7rDj9CO0glOroCEkFE2zKzxSMgVO1aHJPTYcVTwodpGWgfJ_--8GvVgx-3vdOARYOVJegCp534CbGU_YKQoQFIpbw7fsnj2mVE9g=s2048)
+![시작 페이지](https://lh6.googleusercontent.com/FzQF1Qt3RdpfnAonjFB_I__Yf7DXT5CaEqV4GAZkMYexliLUUcMH4r7rDj9CO0glOroCEkFE2zKzxSMgVO1aHJPTYcVTwodpGWgfJ_--8GvVgx-3vdOARYOVJegCp534CbGU_YKQoQFIpbw7fsnj2mVE9g=s2048)
 
 #### 2. 회원가입 & 로그인 (sign-up.html & login.html)
 
-![](https://lh3.googleusercontent.com/zYToZMJiQAiIbHAEcRjglhwtSbM7MuJ710-dOVpbPZzVGCHyRBD7NkxdhIznpJgbBwzVpfOF0Pn-iJ07qUwOYl8PXaIRjiZbPbzsVbnH1jgzN0tQExzJyA-KtNoxRY-gZ2eIWE3N_3U3A1dSreB69RPO6A=s2048)
+![회원가입 & 로그인](https://lh3.googleusercontent.com/zYToZMJiQAiIbHAEcRjglhwtSbM7MuJ710-dOVpbPZzVGCHyRBD7NkxdhIznpJgbBwzVpfOF0Pn-iJ07qUwOYl8PXaIRjiZbPbzsVbnH1jgzN0tQExzJyA-KtNoxRY-gZ2eIWE3N_3U3A1dSreB69RPO6A=s2048)
 
 #### 3. 회원가입 & 로그인 인증 (sign-up-certification.html & login-certification.html)
 
-![](https://lh3.googleusercontent.com/u0Dm-stxnec4KbOahqo3SC07XXEI5xoSZXcrRvFamjWcIja1Rzkjwo4g1_wWUwwaX63Fvvv26cTyoNgXAslOHzDaexg4OWbjqmZviHND67wP8NXPgtV9XLTqjxwcWLmb70OhQLvT3m82uJiPR812KFhw-g=s2048)
+![회원가입 & 로그인 인증](https://lh3.googleusercontent.com/u0Dm-stxnec4KbOahqo3SC07XXEI5xoSZXcrRvFamjWcIja1Rzkjwo4g1_wWUwwaX63Fvvv26cTyoNgXAslOHzDaexg4OWbjqmZviHND67wP8NXPgtV9XLTqjxwcWLmb70OhQLvT3m82uJiPR812KFhw-g=s2048)
 
 #### 4. 카테고리 (category.html)
 
-![](https://lh3.googleusercontent.com/vHz02nVpyfZNQ1-tFwnA-eDMUNoWZifbmzBMmA-pPFEA2uqphtRvtPgqnS5gEdZILeAsogAu_nL4fALsteTb89EFGaU3bvG0mNR_XK7QVmv4fN1u71wBZi6i2ZoX3k_DbnIhZzYRN6VOxj3EwfuJ9W7yoQ=s2048)
+![카테고리](https://lh3.googleusercontent.com/vHz02nVpyfZNQ1-tFwnA-eDMUNoWZifbmzBMmA-pPFEA2uqphtRvtPgqnS5gEdZILeAsogAu_nL4fALsteTb89EFGaU3bvG0mNR_XK7QVmv4fN1u71wBZi6i2ZoX3k_DbnIhZzYRN6VOxj3EwfuJ9W7yoQ=s2048)
 
 #### 5. 선배님 스토리 (story.html)
 
-![](https://lh3.googleusercontent.com/yW1Ydf9mJswyxWm8zV--mOKQnMUfVVrz0Tb9_Tp0andGlnHr2iteJorkuXqPdGUVw2CpnxoHLg1ADejyVvOP5ftzRGdUWzu0jE0RsFuN3u2KvzpjQY5NPPaGCjc7_t1lDuLwIqnV1Pt2UaGv09FJH8REgQ=s2048)
+![선배님 스토리](https://lh3.googleusercontent.com/yW1Ydf9mJswyxWm8zV--mOKQnMUfVVrz0Tb9_Tp0andGlnHr2iteJorkuXqPdGUVw2CpnxoHLg1ADejyVvOP5ftzRGdUWzu0jE0RsFuN3u2KvzpjQY5NPPaGCjc7_t1lDuLwIqnV1Pt2UaGv09FJH8REgQ=s2048)
 
 #### 6. 기기 거래 (device.html)
 
-![](https://lh5.googleusercontent.com/I2WWxFG8Et4gdePibRgnb-bhcx6DXyHxp_AnBb96yv1IPz9W88EEsN9d54FaO0MnF94hYOejxUOr0nPl9S4gGgx0fWtPBHNwF9H2DiVuDGckFko28c1KJ0T9w93Z2xJHvt7vRRKlgKJ894Wq16QfOcCjNw=s2048)
+![기기 거래](https://lh5.googleusercontent.com/I2WWxFG8Et4gdePibRgnb-bhcx6DXyHxp_AnBb96yv1IPz9W88EEsN9d54FaO0MnF94hYOejxUOr0nPl9S4gGgx0fWtPBHNwF9H2DiVuDGckFko28c1KJ0T9w93Z2xJHvt7vRRKlgKJ894Wq16QfOcCjNw=s2048)
 
 #### 7. 기기 상세
 
-![](https://lh4.googleusercontent.com/-1czJ3cZIXMz-wUiBo1vDgWimxucD-AGttkFQMt1KiAsPJdkMXmYaaubasvXdQXZyAP-HGxRTyUZpGahQYXIb3NBlySJRk64r2O2wrTCBYyll-RN-VG1099jmZdrWylJOTphPcjvPIURRl77uDjmfJz44A=s2048)
+![기기 상세](https://lh4.googleusercontent.com/-1czJ3cZIXMz-wUiBo1vDgWimxucD-AGttkFQMt1KiAsPJdkMXmYaaubasvXdQXZyAP-HGxRTyUZpGahQYXIb3NBlySJRk64r2O2wrTCBYyll-RN-VG1099jmZdrWylJOTphPcjvPIURRl77uDjmfJz44A=s2048)
 
 #### 8. 기기 거래 채팅 (chat.html)
 
-![](https://lh5.googleusercontent.com/Zl75ayf5bVGTnCnqpAcNSTbdPCdlIlloElf6z64fWjBFnJ7J9LXVahVDpYRGePBcOWJh437G80TukvPlewxVvUTT-Mlp_dRqjEKm_In5TVX_rMImWJzU8Fwly6Z7Kyvp0-DFmKmT38dqwUGd-kqGIS78wg=s2048)
+![기기 거래 채팅](https://lh5.googleusercontent.com/Zl75ayf5bVGTnCnqpAcNSTbdPCdlIlloElf6z64fWjBFnJ7J9LXVahVDpYRGePBcOWJh437G80TukvPlewxVvUTT-Mlp_dRqjEKm_In5TVX_rMImWJzU8Fwly6Z7Kyvp0-DFmKmT38dqwUGd-kqGIS78wg=s2048)
 
 #### 9. 프로필 (profile.html)
 
-![](https://lh5.googleusercontent.com/WIeI6uWe2RFq9LNzQ0bjsc3Tnpyy4wEKByvfoWK11G6N497a4wGDPAGOLSuYhQe6wnOUFHJTa_8aYRKMAfrpwP8eKf2J1ef1_U-Pw84RuX5D7VA93P6tP3hEqrW9RyUDojO6oyXcv-3DAPIYvglYSm-jJw=s2048)
+![프로필](https://lh5.googleusercontent.com/WIeI6uWe2RFq9LNzQ0bjsc3Tnpyy4wEKByvfoWK11G6N497a4wGDPAGOLSuYhQe6wnOUFHJTa_8aYRKMAfrpwP8eKf2J1ef1_U-Pw84RuX5D7VA93P6tP3hEqrW9RyUDojO6oyXcv-3DAPIYvglYSm-jJw=s2048)
 
 #### 10. 프로필 수정 (profileCard.html)
 
-![](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
+![프로필 수정](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
+
+<br />
 
 ### ✏️ 프로젝트 소감
 
@@ -293,7 +319,7 @@ js 프로젝트를 진행하면서 fetch로 json 데이터를 불러오려는 �
 동적 렌더링을 진행하며 브라우저 렌더링의 순서 및 과정에 영향을 받아 페이지 틀이 무너지거나 동적인 기능이 구현하지 않는 등의 문제를 겪었습니다. 이를 통해 문제 상황을 해결하는 능력을 기를 수 있었으며, 동료들과 함께 고민하는 과정을 통해 협업에 대한 중요성을 다시 한 번 깨달을 수 있었습니다. 또한, 자바스크립트 기능 작동 원리에 대해 더욱 알 수 있는 시간이었습니다.
 다양한 기능을 고민하고 구현하는 과정을 통해 자바스크립트에 대한 이해를 높일 수 있었으며 기능 구현에 대한 흥미를 한 층 더 높일 수 있는 계기가 되었습니다.
 
-<br>
+<br />
 
 ### 🦾 프로젝트 사용법
 
@@ -318,5 +344,5 @@ npm run tailwind
 #### 동시 실행
 
 ```bash
-npm run start 또는 npm run start
+npm start 또는 npm run start
 ```
