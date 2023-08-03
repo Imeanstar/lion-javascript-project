@@ -344,5 +344,5 @@ npm run tailwind
 #### 동시 실행
 
 ```bash
-npm run start 또는 npm run start
+npm start 또는 npm run start
 ```
